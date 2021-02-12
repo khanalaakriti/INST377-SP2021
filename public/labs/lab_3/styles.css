@@ -1,2 +1,11 @@
 /* Add some css styles based on the tutorial at javascript.info: introduction to browser events
  https://javascript.info/introduction-browser-events */
+
+
+  body {
+    width: 70%;
+    min-width: 800px;
+    margin-left: 700px;
+    margin-top: 250px;
+    background-color: pink;
+  }
