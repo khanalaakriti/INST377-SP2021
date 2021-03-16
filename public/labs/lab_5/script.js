@@ -28,7 +28,7 @@ async function dataFilter(mapFromMapFunction) {
 
     event.preventDefault();
     console.log('submit fired', search.value);
-    const filtered= data.filter(record) => record.zip.includes(search.value) && record.geocoded_column_1;
+    const filtered= data.filter(record) => record.zip.includes(search.value);
     const topFive= filtered.slice(0,5);
 
     if (topFive.length < 1) {
@@ -54,7 +54,7 @@ async function dataFilter(mapFromMapFunction) {
   console.log('viewSet coords', coordinates);
   mapFromMapFunction.panTo([coordinates[1], coordinates[0]], 0);
 }
-  });
+});
 
 search.addEventListener('input', (event) => {
   console.log('input', event.target.value);
