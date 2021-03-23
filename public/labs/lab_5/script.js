@@ -54,7 +54,7 @@ async function dataFilter(mapFromMapFunction) {
   console.log('viewSet coords', coordinates);
   mapFromMapFunction.panTo([coordinates[1], coordinates[0]], 0);
 }
-});
+})};
 
 search.addEventListener('input', (event) => {
   console.log('input', event.target.value);
@@ -70,5 +70,6 @@ async function windowActions() {
   const mapObject= mapScript();
   await dataFilter(mapObject);
 }
+
 
 window.onload= windowActions;
