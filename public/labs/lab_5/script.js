@@ -28,7 +28,7 @@ async function dataFilter(mapFromMapFunction) {
 
     event.preventDefault();
     console.log('submit fired', search.value);
-    const filtered= data.filter(record) => record.zip.includes(search.value);
+    const filtered= data.filter(record) = record.zip.includes(search.value);
     const topFive= filtered.slice(0,5);
 
     if (topFive.length < 1) {
