@@ -29,7 +29,7 @@ async function dataFilter(mapObjectFromFunction) {
   const request = await fetch('/api');
   const data = await request.json();
 
-  
+  // test
 
   form.addEventListener('submit', async (event) => {
     // targetList.innerText= '';
